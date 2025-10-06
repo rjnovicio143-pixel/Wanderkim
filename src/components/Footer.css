@@ -1,0 +1,25 @@
+.footer {
+  color: #eee;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .footer p {
+    line-height: 1.4;
+    padding: 0 0.5rem;
+  }
+}

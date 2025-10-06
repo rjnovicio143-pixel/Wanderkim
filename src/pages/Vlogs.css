@@ -1,0 +1,73 @@
+.vlogs-page {
+  height: 99vh;
+  width: 94.9vw;
+  padding-bottom: 5rem; /* space for the footer */
+  
+}
+
+.vlogs-header {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 2rem;
+
+
+}
+
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background: linear-gradient(to right, #408a1e, #66ff00);
+}
+
+.vlog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+@media (max-width: 480px) {
+  .vlogs-page {
+    width: 50vw;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .vlogs-header {
+    padding-top: 60px;
+    font-size: 1.5rem;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .vlog-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+

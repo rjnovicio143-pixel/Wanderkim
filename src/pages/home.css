@@ -1,0 +1,143 @@
+/* ================
+   🌍 Desktop Base
+   ================ */
+.home-wrapper {
+  height: 99vh;
+  width: 94.9vw;
+}
+
+/* Main content spacing */
+.content {
+  padding-top: 150px;
+  margin-bottom: 15rem;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-family: 'Georgia', serif;
+  margin-left: 50px;
+}
+
+.content p {
+  font-size: 17px;
+}
+
+/* Hero Button */
+.hero-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #000000;
+  color: #ededed;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background: linear-gradient(to right, #408a1e, #66ff00);
+}
+
+/* Home Vlogs Section */
+.home-vlogs-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+
+}
+
+.vlogs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.vlogs-grid > div {
+  flex: 1 1 320px;
+  max-width: 400px;
+}
+
+/* Home Blogs Section */
+.home-blogs-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.blogs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.blog-preview {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.blog-preview img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-preview h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* =====================
+   📱 Mobile Styles
+   ===================== */
+@media (max-width: 480px) {
+  .home-wrapper {
+    width: 100vw;
+    height: auto;
+    margin-top: 7rem;
+    padding: 1rem;
+  }
+
+  .content {
+    padding-top: 80px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .hero-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .vlogs-grid > div,
+  .blog-preview {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .home-vlogs-section,
+  .home-blogs-section {
+    margin-bottom: 4rem;
+    padding: 1rem;
+  }
+
+  .blog-preview img {
+    height: 130px;
+  }
+
+  .blog-preview h3 {
+    font-size: 1rem;
+  }
+}

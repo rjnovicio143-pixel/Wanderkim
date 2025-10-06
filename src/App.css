@@ -1,0 +1,46 @@
+/* Fullscreen background video container para ma adjust diritso iyang size sama sa ka dako sa web or butanganan sa vid*/
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+/* para sa size sa video */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*para medyo dark which is oberly*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6   ); /* slight dark overlay */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content that sits on top of the video witch is ang pages bah para mag una*/
+.page-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+

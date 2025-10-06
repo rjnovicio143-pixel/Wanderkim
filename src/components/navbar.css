@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed;
+  width: 98%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 3;
+  height: 70px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(19, 106, 2, 0.94);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* Always horizontal */
+  gap: 50px;
+  margin: 0;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(43, 255, 0, 0.5);
+  background-color: transparent;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+
+}
+
+.nav-links li a:hover {
+  color: rgb(68, 255, 0);
+}
+
+/* Make it responsive without stacking */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+  }
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap; /* allow wrapping if space is tight */
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+}

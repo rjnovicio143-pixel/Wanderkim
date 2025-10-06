@@ -1,0 +1,126 @@
+.blogs-container{
+  width: 94.9vw;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+
+}
+
+/* Header */
+.blogs-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  
+}
+
+/* Intro Paragraph */
+.blogs-container h3 {
+  font-size: 20px;
+  margin-bottom: 1.1rem;
+  text-align: center;
+
+  
+}
+
+
+/* Search Bar Styling */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 0 auto 2rem auto;
+  display: block;
+  border: 1px solid #067005;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: #000000;
+  margin-top: 3rem;
+
+}
+
+.global-comment-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 12px;
+  border-top: 2px solid #ffffff;
+}
+
+.global-comment-section input,
+.global-comment-section textarea {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  margin-top: 10px;
+  background-color: #000000;
+}
+
+.global-comment-section button {
+  background-color: #13a2db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.comments-list .comment {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #080808;
+  border-radius: 8px;
+}
+
+.global-comment-section button:hover{
+  background-color: rgb(0, 240, 4);
+}
+
+/* =============================
+   📱 MOBILE RESPONSIVENESS
+   ============================= */
+
+@media (max-width: 600px) {
+  .blogs-container {
+    margin-top: 5rem;
+    width: 90vw;
+    padding: 1rem;
+  }
+
+  .blogs-container h2 {
+    font-size: 2rem;
+  }
+
+  .blogs-container p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .global-comment-section input,
+  .global-comment-section textarea {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .global-comment-section button {
+    width: 95%;
+  }
+
+  .reply-section input {
+    width: 90%;
+    margin-bottom: 6px;
+  }
+
+  .delete-btn {
+    width: 95%;
+    padding: 6px;
+  }
+}

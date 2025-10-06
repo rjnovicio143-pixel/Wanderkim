@@ -1,0 +1,71 @@
+/* VlogCard.css */
+
+/* General styling for the card */
+.vlog-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Responsive YouTube iframe wrapper (keeps aspect ratio) */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Vlog title */
+.vlog-card h3 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Vlog description */
+.vlog-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Optional: Adjust spacing and font on smaller devices */
+@media (max-width: 480px) {
+  /* VlogCard.css */
+  .video-wrapper {
+    position: relative;
+    padding-top: 25px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    width: 26.5rem;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    width: 10%;
+    height: 50%;
+  }
+
+
+  .vlog-card h3 {
+    font-size: 1rem;
+  }
+
+  .vlog-card p {
+    font-size: 0.95rem;
+  }
+  
+}
+
